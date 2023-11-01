@@ -4,6 +4,12 @@ def encode(password):
         encoded_pass += str((int(password[x]) + 3) % 10)
     return encoded_pass
 
+def decode(password):
+    decoded_password = ''
+    for x in range(len(password)):
+        decoded_password += str((int(password[x]) - 3) % 10)
+    return decoded_password
+
 
 if __name__ == '__main__':
     while True:
