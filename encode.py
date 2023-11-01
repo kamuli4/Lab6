@@ -5,10 +5,6 @@ def encode(password):
     return encoded_pass
 
 
-def decode(password):
-    pass
-
-
 if __name__ == '__main__':
     while True:
         print('Menu\n---------\n1. Encode\n2. Decode\n3. Quit\n')
